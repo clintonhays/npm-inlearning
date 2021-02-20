@@ -1,27 +1,28 @@
 {
-  "name": "test-npm",
-  "version": "1.0.0",
-  "description": "test project for npm",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/clintonhays/npm-inlearning.git"
-  },
-  "author": "Clinton Hays",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/clintonhays/npm-inlearning/issues"
-  },
-  "homepage": "https://github.com/clintonhays/npm-inlearning#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1"
-  }
+	"name": "test-npm",
+	"version": "1.0.0",
+	"description": "test project for npm",
+	"main": "index.js",
+	"scripts": {
+		"start": "nodemon ./index.js --exec babel-node -e js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/clintonhays/npm-inlearning.git"
+	},
+	"author": "Clinton Hays",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/clintonhays/npm-inlearning/issues"
+	},
+	"homepage": "https://github.com/clintonhays/npm-inlearning#readme",
+	"dependencies": {
+		"express": "^4.17.1",
+		"nodemon": "^2.0.7"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-stage-0": "^6.24.1"
+	}
 }
